@@ -16,7 +16,7 @@ const sendBookingEmail = async (userEmail, userName, eventTitle) => {
   try {
     await resend.emails.send({
       // Sender email (Resend allows this default domain)
-      from: "Eventify <onboarding@resend.dev>",
+      from: "Eventify <mishransh2108@gmail.com>",
 
       
       to: userEmail,
@@ -62,7 +62,7 @@ const sendOTPEmail = async (userEmail, otp, type) => {
         : "Please use the following OTP to verify and confirm your event booking.";
 
     await resend.emails.send({
-      from: "Eventify <onboarding@resend.dev>",
+      from: "Eventify <mishransh2108@gmail.com>",
 
       to: userEmail,
 
